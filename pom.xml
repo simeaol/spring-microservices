@@ -22,6 +22,7 @@
     <modules>
         <module>course</module>
         <module>core</module>
+        <module>token</module>
     </modules>
 
     <dependencies>
@@ -73,6 +74,11 @@
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.nimbusds</groupId>
+            <artifactId>nimbus-jose-jwt</artifactId>
         </dependency>
     </dependencies>
 

@@ -1,4 +1,4 @@
-package com.slamine.auth.security.config;
+package com.slamine.security.config;
 
 import com.slamine.auth.security.filter.JwtUsernameAndPasswordAuthenticationFilter;
 import com.slamine.core.property.JwtConfiguration;
@@ -18,7 +18,7 @@ import static org.springframework.security.config.http.SessionCreationPolicy.STA
 
 @EnableWebSecurity
 @RequiredArgsConstructor(onConstructor = @__(@Autowired))
-public class SecurityCredentialsConfig extends WebSecurityConfigurerAdapter {
+public class SecurityTokenConfig extends WebSecurityConfigurerAdapter {
 
     private final UserDetailsService userDetailsService;
     private final JwtConfiguration jwtConfiguration;

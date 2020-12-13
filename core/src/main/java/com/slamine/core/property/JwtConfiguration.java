@@ -29,6 +29,7 @@ public class JwtConfiguration {
     public static class Header{
         private String name = "Authorization";
         private String password = "Bearer ";
+        private String prefix;
     }
 
 }

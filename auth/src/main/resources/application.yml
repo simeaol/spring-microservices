@@ -1,8 +1,9 @@
 server:
-  port: 9090
+  port: 9093
+
 spring:
   application:
-    name: course
+    name: auth
   jpa:
     show-sql: true
     hibernate:
@@ -25,3 +26,4 @@ eureka:
       defaultZone: http://localhost:9091/eureka/
     fetch-registry: true
     register-with-eureka: true
+
