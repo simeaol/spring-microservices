@@ -13,7 +13,7 @@ eureka:
   client:
     service-url:
       defaultZone: http://localhost:9091/eureka/
-    fetch-registry: true
+    fetch-registry: true #only gateway should fetch registry the other microservices no.
     register-with-eureka: true
 
 zuul:

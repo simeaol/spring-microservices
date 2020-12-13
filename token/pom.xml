@@ -10,10 +10,26 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>token</artifactId>
+    <packaging>jar</packaging>
 
     <properties>
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
+        <java.version>11</java.version>
+        <slamine.core.version>1.0-SNAPSHOT</slamine.core.version>
     </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.slamine</groupId>
+            <artifactId>core</artifactId>
+            <version>${slamine.core.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-security</artifactId>
+        </dependency>
+    </dependencies>
 
 </project>
