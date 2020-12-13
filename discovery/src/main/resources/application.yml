@@ -1,0 +1,12 @@
+server:
+  port: 9091
+spring:
+  datasource:
+    name: registry
+
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    service-url:
+      defaultZone: http://localhost:${server.port}/eureka/

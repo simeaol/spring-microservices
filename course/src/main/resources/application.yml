@@ -1,0 +1,27 @@
+server:
+  port: 9090
+spring:
+  application:
+    name: course
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+  jmx:
+    enabled: false
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/course
+    password: root
+    username: root
+
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    service-url:
+      defaultZone: http://localhost:9091
+    fetch-registry: true
+    register-with-eureka: true
