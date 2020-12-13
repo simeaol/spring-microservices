@@ -1,4 +1,4 @@
-package com.slamine.security;
+package com.slamine.security.config;
 
 import com.slamine.core.property.JwtConfiguration;
 import lombok.RequiredArgsConstructor;
@@ -28,7 +28,7 @@ public class SecurityTokenConfig extends WebSecurityConfigurerAdapter {
                 .and()
                 .authorizeRequests()
                 .antMatchers(jwtConfiguration.getLoginUrl()).permitAll()
-                .antMatchers("/courses/admin/**").hasRole("ADMIN")
+                .antMatchers("/course/v1/admin/**").hasRole("ADMIN")
                 .anyRequest().authenticated();
 
         super.configure(http);

@@ -18,9 +18,25 @@
         <java.version>11</java.version>
         <spring-cloud.version>Hoxton.BUILD-SNAPSHOT</spring-cloud.version>
         <maven-compiler-plugin.version>3.8.1</maven-compiler-plugin.version>
+        <slamine-token.version>${slamine-token.version}</slamine-token.version>
+        <slamine-core.version>1.0-SNAPSHOT</slamine-core.version>
+
+
     </properties>
 
     <dependencies>
+        <dependency>
+            <groupId>com.slamine</groupId>
+            <artifactId>token</artifactId>
+            <version>${slamine-token.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.slamine</groupId>
+            <artifactId>core</artifactId>
+            <version>${slamine-core.version}</version>
+        </dependency>
+
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
@@ -28,6 +44,17 @@
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-netflix-zuul</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <optional>true</optional>
+        </dependency>
+
+        <dependency>
+            <groupId>com.nimbusds</groupId>
+            <artifactId>nimbus-jose-jwt</artifactId>
         </dependency>
 
         <dependency>

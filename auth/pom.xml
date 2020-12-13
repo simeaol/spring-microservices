@@ -16,7 +16,7 @@
 
     <properties>
         <java.version>11</java.version>
-        <slamine.core.version>1.0-SNAPSHOT</slamine.core.version>
+        <slamine-core.version>1.0-SNAPSHOT</slamine-core.version>
         <slamine-token.version>1.0-SNAPSHOT</slamine-token.version>
     </properties>
 
@@ -30,7 +30,7 @@
         <dependency>
             <groupId>com.slamine</groupId>
             <artifactId>core</artifactId>
-            <version>${slamine.core.version}</version>
+            <version>${slamine-core.version}</version>
         </dependency>
 
         <dependency>
